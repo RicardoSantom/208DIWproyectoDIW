@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            width: 95vw;
+            height: 95vh;
+            background-color: rgb(25,70,85);
+            margin: auto;
+        }
+        nav{
+            width: 99%;
+            border: 1px solid transparent;
+            margin: 5px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        header{
+            width: 99%;
+            height: 72px;
+            margin: 2px;
+            border: 1px solid white;
+            background-color: darkcyan;
+        }
+        label{
+            position: absolute;
+            width: 56px;
+            height: 40px;
+            display: block;
+            /*background: gray;*/
+            border-radius: 5px;
+            top: 17px;
+            left: 10px;
+        }
+        label::before{
+            content: "";
+            display: block;
+            width: 48px;
+            height: 5px;
+            border-radius: 2px;
+            background-color: white;
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            box-shadow: 0 10px 0 #fff,
+                        0 20px 0 #fff;
+        }
+        input{display: none;}
+        ul{
+            list-style: none;
+            width: 175px;
+            position: relative;
+            left: -100%;
+            transition: all 0.5s ease;
+        }
+        ul a{
+            display: block;
+            width: 100%;
+            line-height: 48px;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(90,139,131);
+            border-bottom: 1px solid #666;
+            padding-left: 5px;
+        }
+        input:checked ~ ul{
+            left: 0;
+        }
+        a:hover{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <header>
+                
+            </header>
+            <input type="checkbox" name="rd" id="hbger">
+            <label for="hbger"></label>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Alumnos</a></li>
+                <li><a href="#">Secretaría</a></li>
+                <li><a href="#">Profesorado</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

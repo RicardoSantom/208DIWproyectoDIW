@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .wrapper {
+            width: 70vw;
+            height: 90vh;
+            margin: 10px auto;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            font-weight: 900;
+            color: darkcyan;
+            background-color: lightgray;
+            padding: 5px;
+            border-bottom: 1px solid #aaa;
+        }
+        p{
+            background-color: #eee;
+            display: none;
+            text-align: justify;
+            padding: 5px;
+        }
+        p:target{
+            display: block;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <article>
+            <a href="#a1">Titulo 1</a>
+            <p id="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores temporibus nemo provident odio
+                commodi rem dicta fugit suscipit magnam minus. Deserunt placeat quibusdam distinctio animi praesentium
+                rem soluta deleniti eligendi.</p>
+        </article>
+        <article>
+            <a href="#a2">Titulo 2</a>
+            <p id="a2">Reprehenderit nulla eum magni fugit accusantium dignissimos corrupti exercitationem error saepe
+                cupiditate, placeat totam, repudiandae dolorem. Commodi voluptate autem architecto itaque tempore
+                molestias, assumenda, ullam soluta dolores, qui quisquam. Aliquam.</p>
+        </article>
+        <article>
+            <a href="#a3">Titulo 3</a>
+            <p id="a3">Impedit sequi repellendus dignissimos quisquam porro deserunt. Quaerat deserunt, dolore saepe ea
+                excepturi fugiat alias illum facilis a, repellat sequi et omnis, asperiores est totam impedit. Illo
+                corrupti nihil similique!</p>
+        </article>
+        <article>
+            <a href="#cerrar">Cerrar</a>
+        </article>
+
+    </div>
+</body>
+
+</html>

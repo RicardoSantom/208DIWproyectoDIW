@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 80vw;
+            height: 50vh;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            margin-top: 25px;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+            margin-right: 10px;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            width: 128px;
+            height: 48px;
+            background-color: greenyellow;
+            border-radius: 10px 10px 0 0;
+            line-height: 48px;
+            text-align: center;
+            font-weight: 900;
+        }
+        li:nth-of-type(2) a{
+            background-color: cornflowerblue;
+        }
+        li:nth-of-type(3) a{
+            background-color: pink;
+        }
+        article{
+            position: absolute;
+        }
+        article:nth-of-type(1){
+            background-color: greenyellow;
+            width: 70vw;
+            height: 40vh;
+            z-index: 1;
+        }
+        article:nth-of-type(2){
+            background-color: cornflowerblue;
+            width: 70vw;
+            height: 40vh;
+        }
+        article:nth-of-type(3){
+            background-color: pink;
+            width: 70vw;
+            height: 40vh;
+        }
+        :target{
+            z-index: 10;
+        }
+        /**********************EJERCICIO B)*****************/
+        .wrapper{
+            width: 80vw;
+            height: 50vh;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+            margin-top: 10px;
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            font-weight: bold;
+            background-color: royalblue;
+            border-radius: 10px 10px 0 0;
+        }
+        input:checked + label{
+            background-color: #87cefa;
+        }
+        section{
+            width: 70vw;
+            height: 40vh;
+            position:absolute;
+            background-color: burlywood;
+        }
+        section:nth-of-type(1){
+            z-index: 1;
+        }
+        input:checked + label + section{
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#p1">Primera</a></li>
+            <li><a href="#p2">Segunda</a></li>
+            <li><a href="#p3">Tercera</a></li>
+        </ul>
+        <article id="p1">Este es el contenido de la 1 PESTAÑA</article>
+        <article id="p2">Este es el contenido de la 2 PESTAÑA</article>
+        <article id="p3">Este es el contenido de la 3 PESTAÑA</article>
+    </div>
+    <div class="wrapper">
+        <input type="radio" name="rd" id="rd1"></input>
+        <label for="rd1">Radio 1</label>
+        <section>Este es el contenido del RADIO 1</section>
+        <input type="radio" name="rd" id="rd2"></input>
+        <label for="rd2">Radio 2</label>
+        <section>Este es el contenido del RADIO 2</section>
+        <input type="radio" name="rd" id="rd3"></input>
+        <label for="rd3">Radio 3</label>
+        <section>Este es el contenido del RADIO 3</section>
+        <input type="radio" name="rd" id="rd4"></input>
+        <label for="rd4">Radio 4</label>
+        <section>Este es el contenido del RADIO 4</section>
+        <input type="radio" name="rd" id="rd5"></input>
+        <label for="rd5">Radio 5</label>
+        <section>Este es el contenido del RADIO 5</section>
+    </div>
+</body>
+
+</html>

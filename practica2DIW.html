@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            width: 33%;
+            height: 72px;
+            margin-right: 4px;
+            text-align: center;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: left;
+            line-height: 72px;
+        }
+        .red{
+            background: #ff0000;
+            color: #0000FF;
+        }
+        .green{
+            background: #00FF00;
+            color: #FF00FF;
+        }
+        .blue{
+            background: #0000FF;
+            color: #FFFF00;
+            margin-right: 0px;
+        }
+        body div:nth-child(2):hover{
+            background: #0000FF;
+            color:#ff0000;
+            border-radius: 50%;
+            text-transform: uppercase;
+            text-decoration: double overline 3px #ff0000;
+        }
+        .green:hover{
+            background: #FF00FF;
+            color: #00FF00;
+            text-decoration: underline dashed 3px #00FF00;
+            text-transform: uppercase;
+        }
+        body div:nth-child(4):hover{
+            background: #FFFF00;
+            margin-right: 0px;
+            color: #0000FF;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h2 >Colores RGB, al pasar el ratón por encima, muestran el color complementario:</h2>
+    <div class="red">Color rojo #FF0000</div>
+    <div class="green">Color verde #00FF00</div>
+    <div class="blue">Color azul #0000FF</div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PR-2-4-3</title>
+<style>
+    *{margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+    .container{
+        margin: 25px;
+        font-family: sans-serif;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 2rem;
+    }
+    a{
+        display: block;
+        width: 128px;
+        height: 48px;
+        
+        line-height: 48px;
+        text-align: center;
+        font-weight: 900;
+        text-decoration: none;
+        letter-spacing: .5px;
+    }
+    ul li:nth-child(1) a{
+       background-color: deeppink;
+    }
+    ul li:nth-child(2) a{
+       background-color: burlywood;
+    }
+    ul li:nth-child(3) a{
+       background-color: orangered;
+    }
+    
+    article a{
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+    }
+    article:nth-of-type(1){
+        background: grey;
+        color: white;
+        padding-bottom: 40rem;
+    }
+    article:nth-of-type(2){
+        background: coral;
+        padding-bottom: 40rem;
+    }
+    article:nth-of-type(3){
+        background: turquoise;
+        padding-bottom: 40rem;
+    }
+    article:target{
+        background-color: red;
+        color: yellow;
+        font-size: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id="INI"></div>
+        <ul>
+            <li><a href="#A1">Primero</a></li>
+            <li><a href="#A2">Segundo</a></li>
+            <li><a href="#A3">Tercero</a></li>
+        </ul>
+        <article id="A1">
+            <h2>Articulo 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cum, est iure libero optio repellat perspiciatis magni! Ex, veniam commodi. Beatae pariatur rerum tenetur vel facilis rem sapiente reprehenderit sit.</p>
+            <div class="volver"><a href="#INI">Volver</a></div>
+        </article>
+        <article id="A2">
+            <h2>Articulo 2</h2>
+            <p>Voluptatem expedita pariatur harum nobis hic ullam, eveniet aliquid maxime modi veniam porro nisi? Recusandae magnam unde cum repellat. Eum incidunt molestias aliquam laudantium accusantium quia pariatur delectus facere! Aspernatur.</p>
+            <div class="volver"><a href="#INI">Volver</a></div>
+        </article>
+        <article id="A3">
+            <h2>Articulo 3</h2>
+            <p>Debitis odit eveniet dolorum ea odio unde magnam doloribus itaque ipsam possimus, sequi, beatae rem libero distinctio at autem dignissimos suscipit facilis. Ab dolore pariatur delectus dignissimos eum incidunt culpa.</p>
+            <div class="volver"><a href="#INI">Volver</a></div>
+        </article>
+    </div>
+</body>
+</html>

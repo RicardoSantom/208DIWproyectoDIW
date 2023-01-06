@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            margin: 0 auto;
+        }
+
+        table {
+            background-color: gray;
+            width: 100%;
+            text-align: center;
+            height: 185px;
+        }
+
+        header {
+            background-color: gray;
+            width: 100%;
+            min-width: 700px;
+            padding: 4px;
+            position: relative;
+            height: 120px;
+
+        }
+
+        header * {
+            position: absolute;
+        }
+
+        header img:nth-of-type(1) {
+            top: 10px;
+            left: 10%;
+        }
+
+        header img:nth-of-type(2) {
+            top: 10px;
+            right: 10%;
+        }
+
+        td {
+            width: 10%;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        article p {
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bolder;
+            text-transform: uppercase;
+            font-size: 50px;
+            left: 35%;
+        }
+
+        nav,
+        aside {
+            width: 20%;
+            height: 70vh;
+            background-color: brown;
+            float: left;
+        }
+
+        main {
+            width: 60%;
+            height: 70vh;
+            background-color: #CCC;
+            float: left;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        span {
+            text-align: center;
+            display: block;
+        }
+
+        nav ul {
+            background-color: #CCC;
+            margin: 5px;
+        }
+
+        details ol {
+            margin-left: 20px;
+        }
+
+        aside p,
+        details {
+            background-color: #CCC;
+            margin: 5px 5px 0;
+        }
+
+        details {
+            margin-top: -3px;
+        }
+
+        footer {
+            clear: both;
+            background-color: darkslategray;
+            height: 160px;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--<table>
+            <tr>
+                <td></td>
+                <td><img src="http://picsum.photos/id/12/150/150" alt="180" width="180"></td>
+                <td></td>
+                <td colspan="2"><h1>CABECERA</h1></td>
+                <td></td>
+                <td><img src="http://picsum.photos/id/44/150/150" alt="180" width="180"></td>
+                <td></td>
+            </tr>
+        </table>-->
+
+
+        <header>
+            <img src="http://picsum.photos/id/12/150/150" alt="100" width="100">
+            <h1>CABECERA</h1>
+            <img src="http://picsum.photos/id/44/150/150" alt="100" width="100">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Mi primer articulo</h2>
+                <h3>Subtitulo 2 articulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt fugiat minus, repellat,
+                    quos voluptatum earum consectetur cupiditate, libero officia repudiandae explicabo necessitatibus
+                    enim labore est ipsum vel. Impedit, natus?</p>
+            </article>
+            <article>
+                <h2>Mi segundo articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt fugiat minus, repellat,
+                    quos voluptatum earum consectetur cupiditate, libero officia repudiandae explicabo necessitatibus
+                    enim labore est ipsum vel. Impedit, natus?</p>
+                <span>comentarios</span>
+            </article>
+            <article>
+                <h2>Mi tercer articulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam deserunt fugiat minus, repellat,
+                    quos voluptatum earum consectetur cupiditate, libero officia repudiandae explicabo necessitatibus
+                    enim labore est ipsum vel. Impedit, natus?</p>
+            </article>
+        </main>
+        <aside>
+            <p>Aquí tenemos nuestra sección DE links interesantes
+                Elemento details
+            </p>
+            <details>
+
+                <summary>
+                    Lista de datos summary
+                </summary>
+                <ol reversed>
+                    <li>DATO 1</li>
+                    <li>DATO 2</li>
+                    <li>DATO 3</li>
+                </ol>
+            </details>
+        </aside>
+        <footer>
+            <p>©Todos los derechos reservados.&copy</p>
+            <label for="prg">Progress:</label>
+            <progress value="10" max="50" id="prg"></progress>
+        </footer>
+    </div>
+</body>
+
+</html>

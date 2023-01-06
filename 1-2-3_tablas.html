@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: 'Sea';
+        src: url("fonts/SEASRN.ttf");
+    }
+
+    @font-face {
+        font-family: 'FFF';
+        src: url("fonts/FFF_Tusj.ttf");
+    }
+
+    h2:first-of-type {
+        font-family: 'Sea';
+        text-align: center;
+        font-weight: 700;
+        font-size: x-large;
+    }
+
+    h2 {
+        font-family: 'FFF';
+        text-align: center;
+        font-weight: 900;
+        font-size: xx-large;
+    }
+
+    .table {
+        width: 100%;
+        height: 100%;
+        display: table;
+        font-family: 'Sea';
+        border-collapse: collapse;
+    }
+    
+    .tabla,
+    .tablaDiv {
+        width: 100%;
+        height: 100%;
+        display: table;
+        font-family: 'Sea';
+        border-collapse: collapse;
+    }
+    .tabla{font-family: 'FFF';}
+    .tablaDiv {
+        background-color: blueviolet;
+        border: 3px darkblue solid;
+    }
+
+    .tabla td,
+    th {
+        height: 3em;
+        color: brown;
+        background-color: bisque;
+        border: 2px darkgray solid;
+    }
+
+    .tabla tbody tr td:first-of-type {
+        width: 50%;
+    }
+
+    .b1 td,
+    th {
+        background-color: red;
+        height: 0.5em;
+    }
+
+    .row {
+        display: table-row;
+    }
+
+    .cell {
+        display: table-cell;
+        text-align: center;
+        height: 3em;
+        vertical-align: middle;
+    }
+
+    .cell:nth-of-type(odd) {
+        background-color: cadetblue;
+    }
+
+    .cell:nth-of-type(3) {
+        background-color: brown;
+    }
+
+    .rowB {
+        display: table-row;
+        height: 18px;
+        width: 100%;
+        background-color: blueviolet;
+    }
+
+    .cellw {
+        display: table-cell;
+        width: 5% !important;
+        background-color: blue !important;
+
+    }
+
+    .tablaDiv :nth-child(1) {
+        width: 40%;
+
+    }
+
+    .tablaDiv :nth-child(3) {
+        width: 15%;
+    }
+
+    .tablaDiv :nth-child(5) {
+        width: 15%;
+    }
+</style>
+
+<h2>Tablas con table</h2>
+<table class="tabla">
+    <tbody>
+        <tr>
+            <td>celda 1 1</td>
+            <td>celda 1 2</td>
+            <td>celda 1 3</td>
+        </tr>
+        <tr class="b1">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>celda 2 1</td>
+            <td>celda 2 2</td>
+            <td>celda 2 3</td>
+        </tr>
+        <tr class="b1">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>celda 3 1</td>
+            <td>celda 3 2</td>
+            <td>celda 3 3</td>
+        </tr>
+        <tr class="b1">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td>celda 4 1</td>
+            <td>celda 4 2</td>
+            <td>celda 4 3</td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br>
+
+<h2>Tablas con div</h2>
+<div class="tablaDiv">
+    <div class="row">
+        <div class="cell">celda 1 1</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 1 2</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 1 3</div>
+    </div>
+    <div class="rowB"> </div>
+    <div class="row">
+        <div class="cell">celda 2 1</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 2 2</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 2 3</div>
+    </div>
+    <div class="rowB">
+
+    </div>
+    <div class="row">
+        <div class="cell">celda 3 1</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 3 2</div>
+        <div class="cellw"></div>
+        <div class="cell">celda 3 3</div>
+    </div>
+    <div class="rowB">
+
+    </div>
+    <div class="row">
+        <div class="cell">celda 4 1</div>
+
+        <div class="cellw"></div>
+        <div class="cell">celda 4 2</div>
+
+        <div class="cellw"></div>
+        <div class="cell">celda 4 3</div>
+    </div>
+
+</div>
+</body>
+
+</html>

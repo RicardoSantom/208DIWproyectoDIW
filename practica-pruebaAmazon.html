@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 98vw;
+            height: 98vh;
+            background-color: white;
+            position: relative;
+        }
+
+        input {
+            display: none;
+        }
+
+        .hola {
+            display: block;
+            width: 220px;
+            background-color: #232f3e;
+            position: absolute;
+            top: 0;
+            text-decoration: none;
+            padding-left: 10px;
+            color: white;
+            line-height: 48px;
+            left: -100%;
+            transition: all 0.5 ease;
+            z-index: 10;
+            font-size: 18px;
+        }
+
+        #lbopen {
+            width: 50px;
+            height: 48px;
+            background-color: rgb(22, 68, 99);
+            display: block;
+            border-radius: 8px;
+            color: white;
+            line-height: 48px;
+            text-align: center;
+            position: relative;
+        }
+
+        #lbclose {
+            display: none;
+            width: 90vw;
+            height: 100vh;
+            top: 0%;
+            background-color: gray;
+            position: absolute;
+            z-index: 10;
+            
+        }
+
+        #lbclose:after {
+            display: block;
+            content: "X";
+            font-family: sans-serif;
+            font-weight: bolder;
+            color: white;
+            font-size: 2rem;
+            position: absolute;
+            left: 230px;
+            cursor: pointer;
+        }
+
+        ul {
+            width: 220px;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            z-index: 10;
+            top: 48px;
+            left: -100%;
+            transition: all 0.5 ease;
+            z-index: 100;
+        }
+
+        a,
+        p {
+            display: block;
+            width: 100%;
+            height: 48px;
+            background-color: #fff;
+        }
+
+        ul a:hover,
+        ul p:hover {
+            background-color: gray;
+        }
+        #open:checked~ul,
+        #open:checked~.hola {
+            left: 0;
+        }
+        #open:checked~#lbclose {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <input type="radio" name="rd" id="open">
+            <label for="open" id="lbopen">Todo</label>
+            <input type="radio" name="rd" id="close">
+            <label for="close" id="lbclose"></label>
+            <a href="#" class="hola">Hola,identifícate</a>
+            <ul id="menu">
+                <p>Tendencias</p>
+                <li><a href="#">Los más vendidos</a></li>
+                <li><a href="#">ÚLtimas novedades</a></li>
+                <li><a href="#">Productos del momento</a></li>
+                <p>Contenido y Dispositivos Digitales</p>
+                <li><a href="#">Amazon Prime Video</a>
+                    <ul id="submenu">
+                        <li><a href="#menu">Menú principal</a></li>
+                        <li><a href="#">Todos los vídeos</a></li>
+                        <li><a href="#">Películas</a></li>
+                        <li><a href="#">Series</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

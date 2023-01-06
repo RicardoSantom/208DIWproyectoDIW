@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{margin: 10px;}
+        div{
+            width: 100px;
+            height: 80px;
+            background-color: blueviolet;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            line-height: 80px;
+            font-weight: bold;
+            color: wheat;
+        }
+        /*Colorea cuadrado número 6*/
+        /*div:nth-child(6){
+            background-color: green;
+        }*/
+        /*Colorea cuadrados 3,6,9,12,15,18*/
+       /* div:nth-child(3n):not(:nth-child(3n +21)){
+            background-color: green;
+        }
+        div:nth-child(3n)::nth-child(-n+18){
+            background-color: green;
+        }*/
+        /*Colorea cuadrados del 8 al 20*/
+        /*div:nth-child(n +8):nth-child(-n+20){
+            background-color: green;
+        }*/
+        /*colorea los cuadros 5,8,11,14,17,29,23*/
+        /*div:nth-child(3n+5):nth-child(-3n+23){
+            background-color: green;
+        }*/
+        /*div:nth-child(9n +3):nth-child(-9n+12){
+            background-color: green;
+        }*/
+        /*Colorea el 12 y el 18*/
+        div:nth-child(6n+12):nth-child(-n+18){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div>20</div>
+    <div>21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div>27</div>
+</body>
+</html>

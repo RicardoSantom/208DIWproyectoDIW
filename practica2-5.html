@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 75%;
+            background-color: khaki;
+            margin: 0 auto;
+        }
+        fieldset:nth-of-type(1) > label{
+            display: block;
+           margin-bottom: 0.3rem;
+        }
+        span{
+            color: brown;
+            font-weight: bold;
+        }
+        input{
+            width: 18rem;
+            height: 48px;
+        }
+        input[type="text"]{
+            border-radius: .3rem;
+            margin-bottom: 0.5rem;
+        }
+        input[type="text"]:first-of-type{
+            background-color: mediumturquoise;
+        }
+        input[type="text"]:nth-of-type(1):focus {
+            box-shadow: 0px 0px 10px 5px violet;
+        }
+        #apel{
+            width: 50vw;
+        }
+        #apel:focus{
+            background-color: darkolivegreen;
+        }
+        ::placeholder{
+            color: darkolivegreen;
+        }
+        input[type="email"]:valid{
+            background-color: lawngreen;
+        }
+        input[type="email"]:invalid{
+            background-color: red;
+        }
+        #dsb{
+            background-color: #aaa;
+            border: 2px solid blue;
+        }
+        input[type="checkbox"]{
+            width: 15px;
+            height: 16px;
+            transform: scale(1.5);
+            margin-left: 20px;
+            margin-right: 10px;   
+            line-height: 1rem;        
+        }
+        #lbt{
+            display: inline;
+        }
+        :checked{
+            box-shadow: 0px 0px 10px 5px violet;
+        }
+        input[type="radio"]{
+            width: 1.5rem;
+        }
+        input[type="number"]:out-of-range{
+            background-color: red;
+        }
+        input[type="submit"]{
+            width: 128px;
+            height: 48px;
+            background-color: mediumseagreen;
+            border-radius: 5%;
+            margin: 0.5rem;
+        }
+        /******************************PARTE B***************************************************/
+        ul{
+            list-style: none;
+        }
+        ul a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+        }
+        ul:first-of-type li a::before{
+            content: "**";
+            font-weight: bolder;
+            color: red;
+            font-size: 18px;
+            margin-right: 5px;
+        }
+        ul:nth-of-type(2) li a::before{
+            content: url("http://picsum.photos/id/32/32");
+            margin-right: 5px;
+
+        }
+        
+        ul:nth-of-type(2) li a::after{
+            content: url("data:image/png;base64,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");
+            margin-right: 10px;
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-size: 20px;
+        }
+        ul:nth-of-type(3) li:nth-of-type(odd) a::before{
+            content:"$$$ ";
+            color: coral;
+        }
+        ul:nth-of-type(3) li:nth-of-type(even) a::before{
+            content:"€€€ ";
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <form action="mentiras.php" method="post">
+            <fieldset>
+                <legend>Pseudo-clases en formularios</legend>
+                <label for="nombre">:required<span> *</span></label>
+                <input type="text" required placeholder="Nombre" autofocus id="nombre" minlength="5" maxlength="30">
+                <label for="">:focus<span> *</span></label>
+                <input type="text" id="apel" placeholder="Apellidos" required minlength="5" maxlength="50">
+                <label>:valid/:invalid<span> *</span></label>
+                <input type="email" required  placeholder="mail@mail">
+                <label for>:disabled</label>
+                <input id="dsb" placeholder="este input esta en disabled" disabled>
+                <fieldset>
+                    <legend>:checked</legend>
+                    <label id="lbt" for="sexo">Sexo:</label>
+                    <input type="checkbox" name="sx" value="m" id="">Hombre
+                    <input type="checkbox" name="sx" value="f" id="">Mujer
+                </fieldset>
+                <fieldset>
+                    <legend>:default</legend>
+                    <input type="radio" name="op">Opcion 1
+                    <input type="radio" name="op" checked>Opcion 2
+                    <input type="radio" name="op">Opcion 3
+                </fieldset>
+                <fieldset>
+                    <legend>.in-range/:out-of-rage</legend>
+                    <label for="num">Edad (1-120)</label>
+                    <input type="number" id="num" min="1" max="120" value="121">
+                </fieldset>
+                <fieldset>
+                    <legend>Otros input</legend>
+                    <label for="arch">Adjunto a enviar</label>
+                    <input type="file" width="auto" name="" id="arch">
+                    <label for="col">Selecciona color.</label>
+                    <input type="color" width="auto"  name="" id="dt">
+                    <label for="dt">Fecha de envío:</label>
+                    <input type="date" width="auto"  name="" id="dt">
+                </fieldset>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+        <!--*************************PARTE B*****************************************************-->
+        <ul>
+            <li><a href="#">1 Elemento</a></li>
+            <li><a href="#">2 Elemento</a></li>
+            <li><a href="#">3 Elemento</a></li>
+            <li><a href="#">4 Elemento</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">1 Elemento</a></li>
+            <li><a href="#">2 Elemento</a></li>
+            <li><a href="#">3 Elemento</a></li>
+            <li><a href="#">4 Elemento</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">1 Elemento</a></li>
+            <li><a href="#">2 Elemento</a></li>
+            <li><a href="#">3 Elemento</a></li>
+            <li><a href="#">4 Elemento</a></li>
+        </ul>
+    </div>
+</body>
+</html>

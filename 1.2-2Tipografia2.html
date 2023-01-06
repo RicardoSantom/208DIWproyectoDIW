@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'After';
+            src: url('./fonts/After_Shok.ttf');
+        }
+        @font-face {
+            font-family: 'FFF';
+            src: url("fonts/FFF_Tusj.ttf");
+        }
+        @font-face {
+            font-family: 'Pacifico';
+            src:url("./fonts/fuente"),
+            url("./fonts/Pacifico.ttf"),
+            local(Arial black);
+        }
+        @font-face {
+            font-family: 'Ricardo';
+            src: url("fonts/HVD_Rowdy.otf");
+        }
+        @font-face {
+            font-family: 'Sea';
+            src: url("fonts/SEASRN.ttf");
+        }
+        main:first-child,p:nth-of-type(2){
+            font-family: 'Pacifico';
+        }
+        p:nth-of-type(1){
+            font-family: 'After';
+        }
+        #segundo h2{
+            font-family: 'FFF';
+        }
+        #segundo p{
+            font-family: 'FFF';
+        }
+        #segundo p:last-of-type{
+            font-family: 'Ricardo';
+            font-size: 1.5em;
+            text-decoration:underline dotted 3px red;
+            text-underline-offset: 10px;
+            text-shadow: -4px -4px 1px red,
+            -6px -6px 1px yellow,
+            -8px -8px 1px red;
+            font-variant: small-caps;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h2>Mi primer artículo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Magnam deleniti rerum sunt asperiores natus,<br>
+                odio repellendus maxime reiciendis nostrum tempore quis,<br>
+                nemo, voluptatum architecto vel sequi quod cupiditate eum nam.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Magnam deleniti rerum sunt asperiores natus,<br>
+                odio repellendus maxime reiciendis nostrum tempore quis,<br>
+                nemo, voluptatum architecto vel sequi quod cupiditate eum nam.
+            </p>
+        </article>
+        <article id="segundo">
+            <h2>Mi segundo artículo</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Magnam deleniti rerum sunt asperiores natus,<br>
+                odio repellendus maxime reiciendis nostrum tempore quis,<br>
+                nemo, voluptatum architecto vel sequi quod cupiditate eum nam.
+            </p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                Magnam deleniti rerum sunt asperiores natus,<br>
+                odio repellendus maxime reiciendis nostrum tempore quis,<br>
+                nemo, voluptatum architecto vel sequi quod cupiditate eum nam.
+            </p>
+        </article>
+    </main>
+</body>
+
+</html>

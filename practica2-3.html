@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            margin: 15px 10px;
+            width: 98vW;
+        }
+        ul:nth-child(1){
+            width: 40%;
+            background-color: black;
+            padding: 10px;
+        }
+        ul:nth-child(1) li{
+            height: 68px;
+            width: 80%;
+            margin: 4px 10px;
+            background-color: violet;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(.62,.1,.83,.97);
+        }
+        ul:nth-child(1) li a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            line-height: 68px;
+            font-size: 1.2rem;
+            font-weight: bolder;
+        }
+        ul:nth-child(1) li a:hover{
+            background-color: blueviolet;
+        }
+        ul:nth-child(1) li:hover{
+            margin-left: 25px;
+        }
+        ul:nth-child(2){
+            width: 70%;
+            margin:50px auto;
+            list-style: none;
+            background-color: black;
+            padding: 15px;
+            text-align: center;
+            min-width: 400px;
+        }
+        ul:nth-child(2) li{
+            display: inline-block;
+            padding-right: 35px;
+            width: 24%;
+            min-width: 50px;
+        }
+        
+        ul:nth-child(2) li:nth-last-child(1){padding-right: 0;}
+        ul:nth-child(2) a{
+            display: block;
+            width: 100%;
+            height: 48px;
+            background-color: hotpink;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            line-height: 48px;
+        }
+        ul:nth-child(2) li:nth-child(1) a{
+            background-color: chartreuse;
+            color: crimson;
+        }
+        ul:nth-child(2) li:nth-child(2) a{
+            background-color: cornflowerblue;
+            color: aqua;
+        }
+        ul:nth-child(2) li:nth-child(3) a{
+            background-color: chocolate;
+            color: crimson;
+        }
+        ul:nth-child(2) li:nth-child(4) a{
+            background-color: rgb(207, 237, 100);
+            color: aqua;
+        }
+        ul:nth-child(2) a:link{
+            background-color: darkred;
+            color: aqua;
+        }
+        ul:nth-child(2) a:visited{
+            background-color: cornflowerblue ;
+            color: black;
+        }
+        ul:nth-child(2) a:hover{
+            /* filter: grayscale(1); */
+            background-color: coral !important;
+            color: antiquewhite;
+        }
+        ul:nth-child(2) a:active{
+            background-color: darkolivegreen ;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#">Primera opcion</a></li>
+            <li><a href="#">Segunda opcion</a></li>
+            <li><a href="#">Tercera opcion</a></li>
+            <li><a href="#">Cuarta opcion</a></li>
+            <li><a href="#">Quinta opcion</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://www.google.com/">Inicio</a></li>
+            <li><a href=https://www.amazon.es/">Secretaria</a></li>
+            <li><a href="https://www.audi.es/">Alumnos</a></li>
+            <li><a href="https://www.raspberrypi.org/">Contacto</a></li>
+        </ul>
+    </div>
+</body>
+</html>

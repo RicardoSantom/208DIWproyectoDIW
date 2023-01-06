@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Ricardo Santiago Tomé">
+        <link rel="stylesheet" href="../webroot/css/estilosPlantilla.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../webroot/images/favicon-96x96.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Práctica1</title>
+        <style>
+            body{
+                width: 100%;
+                text-align: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-weight: 900;
+            }
+            .primarios{
+                width: 30%;
+                display: inline-block;
+                text-align: center;
+            }
+            .secundarios,.terceros,.cuartos,.quintos,.sextos{
+                width:15% ;
+                display: inline-block;
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 100%;
+                /* vertical-align: middle; */
+                line-height: 60px;
+                border: 1px black solid;
+            }
+            #primarioUno{
+                background-color:#FF0000
+            }
+            #primarioDos{
+                background-color: #00FF00
+            }
+            #primarioTres{
+                background-color: #0000FF
+            }
+            #secundarioUno{
+                background-color: #FFFF00
+            }
+            #secundarioDos{
+                background-color: #FF0000
+            }
+            #secundarioTres{
+                background-color: #FF00FF
+            }
+            #secundarioCuatro{
+                background-color: #0000FF
+            }
+            #secundarioCinco{
+                background-color: #00FFFF
+            }
+            #secundarioSeis{
+                background-color: #00FF00
+            }
+            #terceroUno{
+                background-color: #FFFF80
+            }
+            #terceroDos{
+                background-color: #FF8080
+            }
+            #terceroTres{
+                background-color: #FF80FF
+            }
+            #terceroCuatro{
+                background-color: #8080FF
+            }
+            #terceroCinco{
+                background-color: #80FFFF
+            }
+            #terceroSeis{
+                background-color: #80ff80
+            }
+            #cuartoUno{
+                background-color: #FFFFC0
+            }
+            #cuartoDos{
+                background-color: #FFC0C0
+            }
+            #cuartoTres{
+                background-color: #FFC0FF
+            }
+            #cuartoCuatro{
+                background-color: #C0C0FF
+            }
+            #cuartoCinco{
+                background-color: #C0FFFF
+            }
+            #cuartoSeis{
+                background-color: #C0FFC0
+            }
+            #quintoUno{
+                background-color: #C0C000;
+            }
+            #quintoDos{
+                background-color: #00C000;
+            }
+            #quintoTres{
+                background-color: #C000C0;
+            }
+            #quintoCuatro{
+                background-color: #0000C0;
+            }
+            #quintoCinco{
+                background-color: #00C0C0;
+            }
+            #quintoSeis{
+                background-color: #00C000;
+            }
+            #sextoUno{
+                background-color: #808000;
+            }
+            #sextoDos{
+                background-color: #008000;
+            }
+            #sextoTres{
+                background-color: #800080;
+            }
+            #sextoCuatro{
+                background-color: #000080;
+            }
+            #sextoCinco{
+                background-color: #008080;
+            }
+            #sextoSeis{
+                background-color: #008000;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Colores Primarios</h2>
+        <div id="uno">
+            <p class="primarios" id="primarioUno">#FF0000</p>
+            <p class="primarios" id="primarioDos">#00FF00</p>
+            <p class="primarios" id="primarioTres">#0000FF</p>
+        </div>
+        <h2>Colores Secundarios</h2>
+        <div id="dos">
+            <p class="secundarios" id="secundarioUno" >#FFFF00</p>
+            <p class="secundarios" id="secundarioDos">#FF0000</p>
+            <p class="secundarios" id="secundarioTres">#FF00FF</p>
+            <p class="secundarios" id="secundarioCuatro">#0000FF</p>
+            <p class="secundarios" id="secundarioCinco">#00FFFF</p>
+            <p class="secundarios" id="secundarioSeis">#00FF00</p>
+        </div>
+        <h2>Para hacer los colores mas claros Suma en hexadecimal</h2>
+        <div id="tres">
+            <p class="terceros" id="terceroUno" >#FFFF80</p>
+            <p class="terceros" id="terceroDos">#FF8080</p>
+            <p class="terceros" id="terceroTres">#FF80FF</p>
+            <p class="terceros" id="terceroCuatro">#8080FF</p>
+            <p class="terceros" id="terceroCinco">#80FFFF</p>
+            <p class="terceros" id="terceroSeis">#80FF80</p>
+        </div>
+        <div id="cuatro">
+            <p class="cuartos" id="cuartoUno" >#FFFFC0</p>
+            <p class="cuartos"  id="cuartoDos">#FFC0C0</p>
+            <p class="cuartos"  id="cuartoTres">#FFC0FF</p>
+            <p class="cuartos"  id="cuartoCuatro">#C0C0FF</p>
+            <p class="cuartos"  id="cuartoCinco">#C0FFFF</p>
+            <p class="cuartos"  id="cuartoSeis">#C0FFC0</p>
+        </div>
+        <h2>Para hacer los colores mas oscuros Resta en hexadecimal</h2>
+        <div id="cinco">
+            <p class="quintos" id="quintoUno" >#C0C000</p>
+            <p class="quintos" id="quintoDos">#00C000</p>
+            <p class="quintos" id="quintoTres">#C000C0</p>
+            <p class="quintos" id="quintoCuatro">#0000C0</p>
+            <p class="quintos" id="quintoCinco">#00C0C0</p>
+            <p class="quintos" id="quintoSeis">#00C000</p>
+        </div>
+        <div id="seis">
+            <p class="sextos" id="sextoUno" >#808000</p>
+            <p class="sextos"  id="sextoDos">#008000</p>
+            <p class="sextos"  id="sextoTres">#800080</p>
+            <p class="sextos"  id="sextoCuatro">#000080</p>
+            <p class="sextos"  id="sextoCinco">#008080</p>
+            <p class="sextos"  id="sextoSeis">#08000</p>
+        </div>
+        <footer>
+            <p>2022-23  IES LOS SAUCES. <a href="http://daw208.ieslossauces.es/index.html" id="enlacePrincipal" title="Enlace a Index Principal">Ricardo Santiago Tomé</a> © Todos los derechos reservados</p>
+            <a href="https://github.com/RicardoSantom" target="blank" id="github" title="RicardoSantom en GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/ricardo-santiago-tom%C3%A9/" id="linkedin" title="Ricardo Santiago Tomé en Linkedim" target="_blank"></a>
+            <a href="http://daw208.ieslossauces.es/doc/curriculumRicardo.pdf" class="material-icons" title="Curriculum Vitae Ricardo Santiago Tomé" target="_blank" id="curriculum"><span class="material-icons md-18">face</span></a>
+            <a href="http://daw208.ieslossauces.es/208DIWproyectoDIW/index.html" id="enlaceSecundario" title="Enlace a Index Proyecto Tema3">Index Proyecto DWEC</a>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 95vw;
+        }
+
+        .wrapper1,
+        .wrapper2 {
+            width: 40%;
+            float: left;
+        }
+
+        .wrapper2 {
+            float: right;
+        }
+
+        .container1 p {
+            padding: 10px 4px;
+            background-color: gray;
+        }
+
+        .container1 p:first-child {
+            background-color: blue;
+        }
+
+        .container1 p:last-child {
+            background-color: saddlebrown;
+        }
+
+        .container2 ul li:nth-child(3n+2) {
+            background-color: red;
+        }
+
+        .container2 ul li:nth-last-child(3) {
+            background-color: darksalmon;
+        }
+
+        .wrapper2 * {
+            margin-top: 10px;
+            padding: 10px 4px;
+        }
+
+        .container3 p:only-child {
+            background: chartreuse;
+        }
+
+        .container4 p:first-of-type {
+            background-color: lightblue;
+        }
+
+        .container4 span:first-of-type {
+            display: block;
+            background-color: azure;
+        }
+
+        .container4 p:last-of-type {
+            background-color: grey;
+        }
+
+        .container4 p:not(:first-of-type):not(:last-of-type) {
+            background-color: lightgray;
+        }
+
+        .container4 div:first-of-type {
+            background-color: yellow;
+        }
+        .container5 p:nth-of-type(odd) {
+            background-color: lightgray;
+        }
+        .container5 p:nth-of-type(2){
+            background-color: darkblue;
+            color: #ddd;
+        }
+        .container5 strong{
+            background: goldenrod;
+            margin-top: 10px;
+        }
+        .container6 p{
+            background-color: grey;
+        }
+        .container6 span:only-of-type{
+             background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //let pregunta = prompt("¿Te gusta la práctica, Antonio?");
+    </script>
+    <div class="wrapper1">
+        <div class="container1">
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <p>paragraph 3</p>
+            <p>paragraph 4</p>
+        </div>
+        <div class="container2">
+            <ul>
+                <li>Option 1</li>
+                <li>Option 2</li>
+                <li>Option 3</li>
+                <li>Option 4</li>
+                <li>Option 5</li>
+                <li>Option 6</li>
+            </ul>
+        </div>
+        <div class="container3">
+            <p>single paragraph</p>
+        </div>
+    </div>
+    <!--fin wrapper1-->
+    <div class="wrapper2">
+        <div class="container4">
+            <p>Paragraph one</p>
+            <span>text in span</span>
+            <p>Paragraph two2</p>
+            <strong>Texst in strong</strong>
+            <div>This is a div</div>
+            <p>Paragraph three</p>
+        </div>
+        <div class="container5">
+            <p>Paragraph one</p>
+            <span>text in span</span>
+            <p>Paragraph two2</p>
+            <strong>Texst in strong</strong>
+            <div>This is a div</div>
+            <p>Paragraph three</p>
+        </div>
+        <div class="container6">
+            <p>Paragraph one</p>
+            <span>text in span</span>
+            <p>Paragraph two2</p>
+            <p>Paragraph three</p>
+        </div>
+    </div>
+</body>
+
+</html>
